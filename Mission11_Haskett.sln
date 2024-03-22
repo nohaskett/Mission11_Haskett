@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mission11_Haskett", "Mission11_Haskett\Mission11_Haskett.csproj", "{796F9745-2872-40ED-A7E0-46A971BCDD4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{796F9745-2872-40ED-A7E0-46A971BCDD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796F9745-2872-40ED-A7E0-46A971BCDD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796F9745-2872-40ED-A7E0-46A971BCDD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796F9745-2872-40ED-A7E0-46A971BCDD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D080484-7E3B-410F-BFA6-65D949389A42}
+	EndGlobalSection
+EndGlobal
