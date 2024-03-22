@@ -1,7 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using Mission11_Haskett.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<OnlineBookstoreContext>(options =>
+{
+    options.UseSqlite(builder.Configuration["ConnectionStrings:BookConnection"]);
+});
 
 var app = builder.Build();
 
