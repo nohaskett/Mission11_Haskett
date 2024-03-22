@@ -6,9 +6,16 @@ namespace Mission11_Haskett.Controllers
 {
     public class HomeController : Controller
     {
+        private IBookRepository _repo;
+
+        public HomeController(IBookRepository temp)
+        {
+            _repo = temp;
+        }
         public IActionResult Index()
         {
-            return View();
+            var bookData = _repo.Books;
+            return View(bookData);
         }
     }
 }
