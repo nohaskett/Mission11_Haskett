@@ -30,8 +30,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute("pagination", "Books/{pageNum}", new {Controller = "Home", action = "Index" }); // Set up the name and pattern for the pages so that the user can see which page they are on
+
+app.MapDefaultControllerRoute(); // Basically like an if statement that goes to the defauly
 
 app.Run();

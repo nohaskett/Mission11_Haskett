@@ -6,18 +6,11 @@
 
     <h1>Online Bookstore</h1>
 
-    @foreach (Book b in Model.Books)
+    @foreach (Book b in Model.Books) // This part will be for loading the components from the BookDescription view
     {
-        <h3>@b.Title</h3>
-        <ul>
-            <li>Author: @b.Author</li>
-            <li>Publisher: @b.Publisher</li>
-            <li>ISBN: @b.ISBN</li>
-            <li>Classification: @b.Classification, @b.Category</li>
-            <li>Page Count: @b.PageCount</li>
-            <li>Price: @b.Price</li>
-        </ul>
+        <partial name="BookDescription" model="b"/>
     }
 
 
-<div page-model="@Model.PaginationInfo" page-action="Index"></div>
+<div page-model="@Model.PaginationInfo" page-action="Index" page-classes-enabled="true" page-class="btn"
+    page-class-normal="btn-outline-dark" page-class-selected="btn-primary" class="btn-group pull-right m-1"></div>
